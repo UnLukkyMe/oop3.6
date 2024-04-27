@@ -2,8 +2,9 @@ package test;
 
 public class Encryption {
     
-    private String alphabet;
+    public String alphabet;
     public char[][] matrix; //zu testzwecken public
+    int skipsevery=5;
     
     public Encryption(String alph){
         alphabet=alph;
@@ -17,6 +18,27 @@ public class Encryption {
             }
             shifted=shiftString(shifted);
         }
+    }
+
+    public String encrypt(String klartext, String key){
+        String verschluesselt="";
+        int j=-1;
+        for (int i = 0; i < klartext.length(); i++) {
+            j++;
+            verschluesselt += matrix[alphabet.indexOf(klartext.charAt(i))][alphabet.indexOf(key.charAt(j))];
+            if(i>0 && i%skipsevery==0){verschluesselt+=" ";}
+            if(j==key.length()-1){j=-1;} //resetted key zähler
+
+        }
+        return verschluesselt;
+    }
+
+    public String decrypt(String verschluesselt, String key){
+        String klartext="";
+        
+
+
+        return klartext;
     }
 
     public void printMatrix(){
