@@ -21,6 +21,7 @@ public class Encryption {
         }
     }
 
+    //muss noch lernen relevante zeichen zu ignorieren
     public String decrypt(String verschluesselt, String key){
         String klartext="";
         int j=-1;
@@ -46,6 +47,7 @@ public class Encryption {
         return klartext;
     }
 
+    //muss noch lernen relevante zeichen zu ignorieren
     public String encrypt(String klartext, String key){
         String verschluesselt="";
         int j=-1;
