@@ -14,8 +14,14 @@ public class main {
         System.out.println();
         String klartextrück=encryption.decrypt(verschluesselt, key);
         System.out.println("Verschlüsselt: \"" + verschluesselt + "\" Rücktransformiert mit Key: \"" + key + "\" wird zu => \"" + klartextrück + "\"");
+        System.out.println();
 
+        InputHandler handler = new InputHandler();
 
+        handler.readTextFromFile("probedatei.txt");
+        System.out.println(handler.toString());
+        handler.editString();
+        System.out.println(handler.toString());
 
     }
 
