@@ -1,0 +1,2 @@
+In StringEditor funktioniert die replaceall methode mit indexOf,w elche nur den ersten char sucht.
+Besser wäre (um ã¶ oder ãÿ oder zb ae zu finden) eine substring (sliding window) suche über dem String(builder)
