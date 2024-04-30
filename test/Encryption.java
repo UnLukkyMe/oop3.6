@@ -4,20 +4,46 @@ public class Encryption {
     
     public String alphabet;
     public char[][] matrix; //zu testzwecken public
-    int skipsevery=5;
+    int skipsevery=Integer.MAX_VALUE;
+    //Hashmap die buchstaben des alphabets auf nummern mapped, sodass man den string.indexOf zugriff nicht so oft braucht?
     
     public Encryption(String alph){
         alphabet=alph;
         matrix=new char[alphabet.length()][alphabet.length()];
         String shifted=alphabet;
 
-        for(int i=0; i<alphabet.length(); i++){
-            
+        //Fill Matrix
+        for(int i=0; i<alphabet.length(); i++){ 
             for(int j=0; j<alphabet.length(); j++){
                 matrix[i][j]=shifted.charAt(j);
             }
             shifted=shiftString(shifted);
         }
+    }
+
+    public String decrypt(String verschluesselt, String key){
+        String klartext="";
+        int j=-1;
+        for(int i=0; i<verschluesselt.length();i++){
+            j++;
+            char verschluesseltChar=verschluesselt.charAt(i);
+            char keyChar=key.charAt(j);
+            int posVerschluesselt=0, posKey=0;
+
+            while(matrix[posKey][0]!=keyChar){
+                posKey++;
+            }
+            while(matrix[posKey][posVerschluesselt]!=verschluesseltChar){
+                posVerschluesselt++;
+            }
+
+            klartext+=alphabet.charAt(posVerschluesselt);
+
+            if(i==key.length()-1){j=-1;}
+            
+        }
+
+        return klartext;
     }
 
     public String encrypt(String klartext, String key){
@@ -31,14 +57,6 @@ public class Encryption {
 
         }
         return verschluesselt;
-    }
-
-    public String decrypt(String verschluesselt, String key){
-        String klartext="";
-        
-
-
-        return klartext;
     }
 
     public void printMatrix(){
