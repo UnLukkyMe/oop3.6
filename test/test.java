@@ -10,12 +10,27 @@ class test{
     h.editString();
     System.out.println(h.toString());
  */
-
+        
     String str="Ha llo o: ä. ü. ö. ß. meine Freunde";
+    /*
     System.out.println(str);
     String edited = StringEditor.editStringForEncryption(str);
     System.out.println(edited);
     String output = StringEditor.editStringAfterDecryption(edited);
     System.out.println(output);
+    */
+
+   
+    
+    System.out.println(str);
+    str=StringEditor.editStringForEncryption(str);
+    System.out.println(str);
+    str=StringEditor.editStringAfterDecryption(str);
+    System.out.println(str);
+  
+
     }
+
+    
+
 }

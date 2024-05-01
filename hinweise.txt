@@ -1,2 +1,4 @@
 In StringEditor funktioniert die replaceall methode mit indexOf,w elche nur den ersten char sucht.
 Besser wäre (um ã¶ oder ãÿ oder zb ae zu finden) eine substring (sliding window) suche über dem String(builder)
+
+für den encryption ignorierer: mach n string der alle chars zb zahlen, sonderzeichen satzzeichen enthält und überprüfe beim codieren ob ingorierString.contains(charAt(i)) -> überspringe den char
