@@ -4,7 +4,7 @@ public class Encryption {
     
     public String alphabet;
     public char[][] matrix; //zu testzwecken public
-    private String ignore=".:,;!§$%&/()=?`´\\{}[]-_\"#'+*~^°<>|0123456789 ";
+    private String ignore=".:,;!§$%&/()=?`´'\\{}[]-_\"#'+*@~^°<>|0123456789 ";
     int skipsevery=Integer.MAX_VALUE;
     //Hashmap die buchstaben des alphabets auf nummern mapped, sodass man den string.indexOf zugriff nicht so oft braucht?
     
