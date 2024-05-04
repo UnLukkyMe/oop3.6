@@ -15,6 +15,7 @@ public class InputHandler {
     }
 
     //macht schon alles kleinbuchstaben 
+    //WORKING DIRECTORY MUSS EINS ÜBER DEM FOLDER MIT DATEI SEIN
     public void readTextFromFile(String fileName){
 
         try(
@@ -24,8 +25,8 @@ public class InputHandler {
             String line="";
             while((line=br.readLine())!=null){
                 strBuilder.append(line.toLowerCase());
-                //für leerzeichen unique zeichen vereinbaren ,dass von codierung ingnoriert wird um am ende wieder umgebrochen zu werden
-                strBuilder.append("_");
+                //für leerzeichen unique zeichen vereinbaren ,dass von codierung ingnoriert wird um am ende wieder umgebrochen zu werden. BZW leerzeichen einfach beim codieren ignorieren
+                strBuilder.append("_"); //zeilenumbruch merken
             }
         }catch(FileNotFoundException fnfEx){
             System.out.println("File: " + fileName + " nicht found");
@@ -35,6 +36,10 @@ public class InputHandler {
 
 
     }
+
+    /* 
+
+    WIRD NACH STRINGEDITOR AUSGELAGERT
 
     public void editString(){
 
@@ -66,7 +71,7 @@ public class InputHandler {
         }
     }
 
-
+*/
 
     public String toString() {
         return strBuilder.toString();

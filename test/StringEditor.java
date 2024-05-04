@@ -4,6 +4,7 @@ public class StringEditor {
     private static StringBuilder strBuilder = new StringBuilder();
 
     public static String editStringAfterDecryption(String str){
+        strBuilder.setLength(0);
         strBuilder.append(str);
         //einreplace von "ae" zusammenhängend funktioniert nicht da indexOf nur nach dem ertsen buchstaben sucht -> in repalceall nach substring suchen
         replaceAllWindowSearch("ae", "ä");
@@ -13,6 +14,7 @@ public class StringEditor {
     }
 
     public static String editStringForEncryption(String str){
+        strBuilder.setLength(0);
          strBuilder.append(str);
         //replaceAllWindowSearch(" ", "");
 

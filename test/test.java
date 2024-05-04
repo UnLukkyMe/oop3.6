@@ -22,12 +22,8 @@ class test{
 
    
     
-    System.out.println(str);
-    str=StringEditor.editStringForEncryption(str);
-    System.out.println(str);
-    str=StringEditor.editStringAfterDecryption(str);
-    System.out.println(str);
-  
+    String mystr="Hi ihr Atzen._Wie gehts?_Fragte ich mich.";
+    OutputHandler.writeTextToFile("testwriting.txt", mystr);
 
     }
 
