@@ -4,6 +4,7 @@ public class Encryption {
     
     public String alphabet;
     public char[][] matrix; //zu testzwecken public
+    private String ignore=".:,;!§$%&/()=?`´\\{}[]-_\"#'+*~^°<>|0123456789 ";
     int skipsevery=Integer.MAX_VALUE;
     //Hashmap die buchstaben des alphabets auf nummern mapped, sodass man den string.indexOf zugriff nicht so oft braucht?
     
@@ -28,6 +29,16 @@ public class Encryption {
         for(int i=0; i<verschluesselt.length();i++){
             j++;
             char verschluesseltChar=verschluesselt.charAt(i);
+            while(ignore.indexOf(verschluesseltChar)!=-1 && i<verschluesselt.length()){
+                if(i==verschluesselt.length()-1){
+                    klartext+=verschluesseltChar;
+                    return klartext;
+                }
+                i++;
+                klartext+=verschluesseltChar;
+                verschluesseltChar=verschluesselt.charAt(i);
+            }
+
             char keyChar=key.charAt(j);
             int posVerschluesselt=0, posKey=0;
 
@@ -40,7 +51,7 @@ public class Encryption {
 
             klartext+=alphabet.charAt(posVerschluesselt);
 
-            if(i==key.length()-1){j=-1;}
+            if(j==key.length()-1){j=-1;}
             
         }
 
@@ -53,7 +64,18 @@ public class Encryption {
         int j=-1;
         for (int i = 0; i < klartext.length(); i++) {
             j++;
-            verschluesselt += matrix[alphabet.indexOf(klartext.charAt(i))][alphabet.indexOf(key.charAt(j))];
+            char klartextChar=klartext.charAt(i);
+            while(ignore.indexOf(klartextChar)!=-1 && i<klartext.length()){
+                if(i==klartext.length()-1){
+                    verschluesselt+=klartextChar; 
+                    return verschluesselt;
+                }
+                i++;
+                verschluesselt+=klartextChar;
+                klartextChar=klartext.charAt(i);
+            }
+
+            verschluesselt += matrix[alphabet.indexOf(klartextChar)][alphabet.indexOf(key.charAt(j))];
             if(i>0 && i%skipsevery==0){verschluesselt+=" ";}
             if(j==key.length()-1){j=-1;} //resetted key zähler
 
@@ -70,6 +92,19 @@ public class Encryption {
             System.out.println();
         }
 
+    }
+
+    public String getMatrixAsString(){
+        String out="";
+
+        for(int i=0; i<matrix.length; i++){
+            for(int j=0; j<matrix[0].length; j++){
+                out+=matrix[i][j];
+            }
+            out+="_";
+        }
+        
+        return out;
     }
 
     public String shiftString(String s){

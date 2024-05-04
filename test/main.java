@@ -1,37 +1,83 @@
 package test;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
-        Encryption encryption = new Encryption("abcdefghijklmnopqrstuvwxyz");
-        //String klartext = "aarondugeilerficker";
-        String key = "zibbidizap";
-        String verschluesselt = "";
+        boolean ver;
+        String key="";
+        String filenametoread="";
+        String filenametowrite="";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-        /*
-       verschluesselt=encryption.encrypt(klartext, key);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Möchtest du einen Text Ver- oder Entschlüsseln?: (1|0)");
+        String in=scanner.nextLine();
+        if(in.equals("1") || in.equals("verschlüsseln")|| in.equals("Verschlüsseln")|| in.equals("ver")){
+            ver=true;
+        }else{
+            ver=false;
+        }
 
+        System.out.println("\nWie lautet der Schlüssel? ");
+        key=scanner.nextLine();
 
-        System.out.println("Klartext: \"" + klartext + "\" Verschlüsselt mit Key: \"" + key + "\" wird zu => \"" + verschluesselt+ "\"");
-        System.out.println();
-        String klartextrück=encryption.decrypt(verschluesselt, key);
-        System.out.println("Verschlüsselt: \"" + verschluesselt + "\" Rücktransformiert mit Key: \"" + key + "\" wird zu => \"" + klartextrück + "\"");
-        System.out.println();
-        	*/
+        if(ver){
+            System.out.println("\nGib nun den Dateinamen der zu verschlüsselnden Datei im Ordner \"inputfiles\" an:");
+            filenametoread=scanner.nextLine();
+            System.out.println("\nNun den Namen der output-Datei im ordner \"outputfiles\"");
+            filenametowrite=scanner.nextLine();
+        }else{
+            System.out.println("\nGib nun den Dateinamen der zu entschlüsselnden Datei im Ordner \"inputfiles\" an:");
+            filenametoread=scanner.nextLine();
+            System.out.println("\nNun den Namen der output-Datei im ordner \"outputfiles\"");
+            filenametowrite=scanner.nextLine();
+        }
 
-        InputHandler handler = new InputHandler();
+        System.out.println("\nVerschlüsseln? " + ver + "\nSchlüssel: " + key + "\nDateiname: " + filenametoread);
 
-        handler.readTextFromFile("probedatei.txt");
-        String klartext = handler.toString();
-        System.out.println(klartext);
-        klartext=StringEditor.editStringForEncryption(klartext);
-        System.out.println(klartext);
-        klartext=StringEditor.editStringAfterDecryption(klartext);
-        System.out.println(klartext);
-        klartext=StringEditor.editStringForEncryption(klartext);
-        System.out.println(klartext);
+        Encryption encrypter = new Encryption(alphabet);
+
+        String klartext="";
+        String verschluesselt="";
+        String output="";
+
+        InputHandler ihandler = new InputHandler();
+        ihandler.readTextFromFile(filenametoread);
+        if(ver){
+            klartext=ihandler.toString();
+            klartext=StringEditor.editStringForEncryption(klartext);
+            
+            verschluesselt=encrypter.encrypt(klartext, key);
+
+            output+=">Klartext:_";
+            output+=klartext;
+            output+="_>Verschluesselt mit Key \"" + key + "\":_";
+            output+=verschluesselt;
+
+            
+
+        }else{
+            verschluesselt=ihandler.toString();
+            klartext=encrypter.decrypt(verschluesselt, key);
+            //klartext=StringEditor.editStringAfterDecryption(klartext);
+
+            output+=">Verschluesselt:_";
+            output+=verschluesselt;
+            output+="_>Entschluesselt mit Key \"" + key + "\":_";
+            output+=klartext;
+
+        }
+
+        output+="_>Verschluesselungsmatrix:_";
+        output+=encrypter.getMatrixAsString();
+        OutputHandler.writeTextToFile(filenametowrite, output);
         
-        //System.out.println(handler.toString());
 
+    }
+
+    public static void printVerschluesselt(){
+        
     }
 
     

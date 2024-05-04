@@ -9,6 +9,7 @@ import java.io.IOException;
 //PROBLEM, wie merken wir uns Zeilenumbrüche, beim einlesen der Datei
 public class InputHandler {
     public StringBuilder strBuilder;
+    String linebreakstring="_";
 
     public InputHandler() {
         strBuilder = new StringBuilder();
@@ -19,14 +20,14 @@ public class InputHandler {
     public void readTextFromFile(String fileName){
 
         try(
-            FileReader fr = new FileReader(".\\test\\"+fileName);
+            FileReader fr = new FileReader(".\\inputfiles\\"+fileName);
             BufferedReader br = new BufferedReader(fr);
         ){
             String line="";
             while((line=br.readLine())!=null){
                 strBuilder.append(line.toLowerCase());
                 //für leerzeichen unique zeichen vereinbaren ,dass von codierung ingnoriert wird um am ende wieder umgebrochen zu werden. BZW leerzeichen einfach beim codieren ignorieren
-                strBuilder.append("_"); //zeilenumbruch merken
+                strBuilder.append(linebreakstring); //zeilenumbruch merken
             }
         }catch(FileNotFoundException fnfEx){
             System.out.println("File: " + fileName + " nicht found");

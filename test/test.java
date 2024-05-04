@@ -10,8 +10,9 @@ class test{
     h.editString();
     System.out.println(h.toString());
  */
-        
-    String str="Ha llo o: ä. ü. ö. ß. meine Freunde";
+    String alphabet="abcdefghijklmnopqrstuvwxyz";    
+    String str2="Ha llo o: ä. ü. ö. ß. meine Freunde";
+    String str="polya+#.lpha_betisch.";
     /*
     System.out.println(str);
     String edited = StringEditor.editStringForEncryption(str);
@@ -20,10 +21,16 @@ class test{
     System.out.println(output);
     */
 
-   
+    System.out.println("Original: "  +str);
+    String edited=StringEditor.editStringForEncryption(str);
+    System.out.println("Editiert: "+edited);
+    Encryption encrypter = new Encryption(alphabet);
+    String verschluesselt = encrypter.encrypt(edited, "scheune");
+    System.out.println("Verschlüsselt: " + verschluesselt);
+    String entschluesselt= encrypter.decrypt(verschluesselt, "scheune");
+    System.out.println("Entschlüsselt: "+ entschluesselt);
     
-    String mystr="Hi ihr Atzen._Wie gehts?_Fragte ich mich.";
-    OutputHandler.writeTextToFile("testwriting.txt", mystr);
+    OutputHandler.writeTextToFile("testschreiben.txt", str);
 
     }
 

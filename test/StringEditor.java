@@ -7,9 +7,9 @@ public class StringEditor {
         strBuilder.setLength(0);
         strBuilder.append(str);
         //einreplace von "ae" zusammenhängend funktioniert nicht da indexOf nur nach dem ertsen buchstaben sucht -> in repalceall nach substring suchen
-        replaceAllWindowSearch("ae", "ä");
-        replaceAllWindowSearch("oe", "ö");
-        replaceAllWindowSearch("ue", "ü");
+        replaceAllWindowSearch("ae", "ã¤");//ä");
+        replaceAllWindowSearch("oe", "ã¶");//ö");
+        replaceAllWindowSearch("ue", "ã¼");//ü");
         return strBuilder.toString();
     }
 

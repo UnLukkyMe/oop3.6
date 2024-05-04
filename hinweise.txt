@@ -1,1 +1,8 @@
 für den encryption ignorierer: mach n string der alle chars zb zahlen, sonderzeichen satzzeichen enthält und überprüfe beim codieren ob ingorierString.contains(charAt(i)) -> überspringe den char
+
+alle was geht private machen
+
+linebreak zeichen "_" in datei: inputhandler und outputhandler
+
+funktioniert noch nicht:
+nach decryption string mit string editor ae wider zu ä machen?
