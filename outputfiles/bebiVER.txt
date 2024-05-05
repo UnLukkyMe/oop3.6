@@ -1,0 +1,33 @@
+>Klartext:
+hallo ich bin bebi und ich nenne mein bebi jetzt immer ogel obwohl es das gar nicht mag aber ich finde es so suess
+
+>Verschluesselt mit Key "mikro":
+tivcc ukr swz josw gvn zqt voebq uozb nmlz xqbjk wyuoi csmv fpiwrc se lkj umz xzqtb wru mjoi wop pzbpm oj ga aevge
+
+>Verschluesselungsmatrix:
+abcdefghijklmnopqrstuvwxyz
+bcdefghijklmnopqrstuvwxyza
+cdefghijklmnopqrstuvwxyzab
+defghijklmnopqrstuvwxyzabc
+efghijklmnopqrstuvwxyzabcd
+fghijklmnopqrstuvwxyzabcde
+ghijklmnopqrstuvwxyzabcdef
+hijklmnopqrstuvwxyzabcdefg
+ijklmnopqrstuvwxyzabcdefgh
+jklmnopqrstuvwxyzabcdefghi
+klmnopqrstuvwxyzabcdefghij
+lmnopqrstuvwxyzabcdefghijk
+mnopqrstuvwxyzabcdefghijkl
+nopqrstuvwxyzabcdefghijklm
+opqrstuvwxyzabcdefghijklmn
+pqrstuvwxyzabcdefghijklmno
+qrstuvwxyzabcdefghijklmnop
+rstuvwxyzabcdefghijklmnopq
+stuvwxyzabcdefghijklmnopqr
+tuvwxyzabcdefghijklmnopqrs
+uvwxyzabcdefghijklmnopqrst
+vwxyzabcdefghijklmnopqrstu
+wxyzabcdefghijklmnopqrstuv
+xyzabcdefghijklmnopqrstuvw
+yzabcdefghijklmnopqrstuvwx
+zabcdefghijklmnopqrstuvwxy

@@ -2,7 +2,9 @@ für den encryption ignorierer: mach n string der alle chars zb zahlen, sonderze
 
 alle was geht private machen
 
-linebreak zeichen "_" in datei: inputhandler und outputhandler
+linebreak zeichen "_" in datei: inputhandler und outputhandler und main in ausgabe
+
+inputhandler vllt static machen
 
 funktioniert noch nicht:
 nach decryption string mit string editor ae wider zu ä machen?
