@@ -1,4 +1,4 @@
-Verschluesselt:
+>Verschluesselt:
 unhyxvyk  mvihvk ap keyarwohve 
 ssjvprveek  rymhm zgp usljiygu 
 luzpwv  zsba hwu cslvkwp  brx aixhl hyf kwilrqnijvpkya oggumaf 
@@ -17,26 +17,26 @@ zyewujpixrrw fhqya  awnjly qij mvihvkap hyzjejvlr
 wbqggkmuaxwp  asxgifiyeyoij  ujlcsjdgbxy  oslgu  yhq effyi mgyeol
 tyewgplr 
 
-Entschluesselt mit Key "scheune":
-claudius  kã¶nig in dã¤nnemark 
+>Entschluesselt mit Key "scheune":
+claudius  koenig in daennemark 
 fortinbras  prinz von norwegen 
-hamlet  sohn des vorigen  und neffe des gegenwã¤rtigen kã¶nigs 
-polonius  ober kã¤mmerer 
+hamlet  sohn des vorigen  und neffe des gegenwaertigen koenigs 
+polonius  ober kaemmerer 
 horatio  freund von hamlet 
-lã¤rtes  sohn des polonius 
-voltimand  cornelius  rosenkranz und gã¼ldenstern  hofleute 
+laertes  sohn des polonius 
+voltimand  cornelius  rosenkranz und gueldenstern  hofleute 
 ossrich  ein hofnarr 
 marcellus  ein officier 
 bernardo und francisco  zween soldaten 
 reinoldo  ein bedienter des polonius 
 der geist von hamlets vater 
-gertrude  kã¶nigin von dã¤nnemark  und hamlets mutter 
+gertrude  koenigin von daennemark  und hamlets mutter 
 ophelia  tochter des polonius  von hamlet geliebt 
-verschiedene damen  welche der kã¶nigin aufwarten 
-comã¶dianten  todtengrã¤ber  schiffleute  boten  und andre stumme
+verschiedene damen  welche der koenigin aufwarten 
+comoedianten  todtengraeber  schiffleute  boten  und andre stumme
 personen 
 
-Verschluesselungsmatrix:
+>Verschluesselungsmatrix:
 abcdefghijklmnopqrstuvwxyz
 bcdefghijklmnopqrstuvwxyza
 cdefghijklmnopqrstuvwxyzab

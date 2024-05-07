@@ -38,6 +38,25 @@ public class InputHandler {
 
     }
 
+    public void printTextFromWrittenFile(String fileName){
+
+        try(
+            FileReader fr = new FileReader(".\\outputfiles\\"+fileName);
+            BufferedReader br = new BufferedReader(fr);
+        ){
+            String line="";
+            while((line=br.readLine())!=null){
+                System.out.println(line);
+            }
+        }catch(FileNotFoundException fnfEx){
+            System.out.println("File: " + fileName + " nicht found");
+        }catch(IOException ioEx){
+            System.out.println("Error while reading file: " + fileName);
+        }
+
+
+    }
+
     /* 
 
     WIRD NACH STRINGEDITOR AUSGELAGERT

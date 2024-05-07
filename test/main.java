@@ -73,13 +73,14 @@ public class main {
         output+=encrypter.getMatrixAsString();
         OutputHandler.writeTextToFile(filenametowrite, output);
         
-
+        if (ver) {
+            System.out.println();
+            ihandler.printTextFromWrittenFile(filenametowrite);
+        }else{
+            System.out.println();
+            ihandler.printTextFromWrittenFile(filenametowrite);
+        }
     }
-
-    public static void printVerschluesselt(){
-        
-    }
-
     
 
 }

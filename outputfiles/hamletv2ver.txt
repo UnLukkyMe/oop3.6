@@ -1,4 +1,4 @@
-Klartext:
+>Klartext:
 claudius  koenig in daennemark 
 fortinbras  prinz von norwegen 
 hamlet  sohn des vorigen  und neffe des gegenwaertigen koenigs 
@@ -17,7 +17,7 @@ verschiedene damen  welche der koenigin aufwarten
 comoedianten  todtengraeber  schiffleute  boten  und andre stumme
 personen 
 
-Verschluesselt mit Key "scheune":
+>Verschluesselt mit Key "scheune":
 unhyxvyk  mvihvk ap keyarwohve 
 ssjvprveek  rymhm zgp usljiygu 
 luzpwv  zsba hwu cslvkwp  brx aixhl hyf kwilrqnijvpkya oggumaf 
@@ -36,7 +36,7 @@ zyewujpixrrw fhqya  awnjly qij mvihvkap hyzjejvlr
 wbqggkmuaxwp  asxgifiyeyoij  ujlcsjdgbxy  oslgu  yhq effyi mgyeol
 tyewgplr 
 
-Verschluesselungsmatrix:
+>Verschluesselungsmatrix:
 abcdefghijklmnopqrstuvwxyz
 bcdefghijklmnopqrstuvwxyza
 cdefghijklmnopqrstuvwxyzab

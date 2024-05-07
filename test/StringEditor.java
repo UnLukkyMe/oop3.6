@@ -21,6 +21,7 @@ public class StringEditor {
         //PROBLEM: nach dem einlesen einer txt, schein "ä" als "ã¤" gelesen zu werden somit wird kein "ä" gefunden -> replace auch "ã¤"
         replaceAllWindowSearch("ä", "ae");
         replaceAllWindowSearch("ã¤", "ae");
+        replaceAllWindowSearch("ã„", "ae");
         //replaceAllWindowSearch("¤", "");
 
         replaceAllWindowSearch("ö", "oe");
@@ -29,6 +30,7 @@ public class StringEditor {
 
         replaceAllWindowSearch("ü", "ue");
         replaceAllWindowSearch("ã¼", "ue");
+        replaceAllWindowSearch("ãœ", "ue");
         //replaceAllWindowSearch("¼", "");
 
         replaceAllWindowSearch("ß", "ss");

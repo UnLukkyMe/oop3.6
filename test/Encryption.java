@@ -1,10 +1,14 @@
 package test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Encryption {
     
-    public String alphabet;
-    public char[][] matrix; //zu testzwecken public
+    private String alphabet;
+    private char[][] matrix; //zu testzwecken public
     private String ignore=".:,;!§$%&/()=?`´'\\{}[]-_\"#'+*@~^°<>|0123456789 ";
+    private Map<Character, Integer> map;
     int skipsevery=Integer.MAX_VALUE;
     //Hashmap die buchstaben des alphabets auf nummern mapped, sodass man den string.indexOf zugriff nicht so oft braucht?
     
@@ -19,6 +23,11 @@ public class Encryption {
                 matrix[i][j]=shifted.charAt(j);
             }
             shifted=shiftString(shifted);
+        }
+        //Fill map for quick alphabet access
+        map= new HashMap<Character, Integer>();
+        for(int i=0; i<alphabet.length(); i++){
+            map.put(alphabet.charAt(i), i);
         }
     }
 
@@ -58,7 +67,6 @@ public class Encryption {
         return klartext;
     }
 
-    //muss noch lernen relevante zeichen zu ignorieren
     public String encrypt(String klartext, String key){
         String verschluesselt="";
         int j=-1;
@@ -75,7 +83,8 @@ public class Encryption {
                 klartextChar=klartext.charAt(i);
             }
 
-            verschluesselt += matrix[alphabet.indexOf(klartextChar)][alphabet.indexOf(key.charAt(j))];
+            verschluesselt +=matrix[map.get(klartextChar)][map.get(key.charAt(j))];
+            //verschluesselt += matrix[alphabet.indexOf(klartextChar)][alphabet.indexOf(key.charAt(j))];
             if(i>0 && i%skipsevery==0){verschluesselt+=" ";}
             if(j==key.length()-1){j=-1;} //resetted key zähler
 

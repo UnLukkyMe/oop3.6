@@ -12,7 +12,7 @@ class test{
  */
     String alphabet="abcdefghijklmnopqrstuvwxyz";    
     String str2="Ha llo o: ä. ü. ö. ß. meine Freunde";
-    String str="polya+#.lpha_betisch.";
+    String str="polya+#.lpha_betisch. HÄllo";
     /*
     System.out.println(str);
     String edited = StringEditor.editStringForEncryption(str);
@@ -21,16 +21,9 @@ class test{
     System.out.println(output);
     */
 
-    System.out.println("Original: "  +str);
-    String edited=StringEditor.editStringForEncryption(str);
-    System.out.println("Editiert: "+edited);
-    Encryption encrypter = new Encryption(alphabet);
-    String verschluesselt = encrypter.encrypt(edited, "scheune");
-    System.out.println("Verschlüsselt: " + verschluesselt);
-    String entschluesselt= encrypter.decrypt(verschluesselt, "scheune");
-    System.out.println("Entschlüsselt: "+ entschluesselt);
-    
-    OutputHandler.writeTextToFile("testschreiben.txt", str);
+        System.out.println(str);
+        System.out.println(str.toLowerCase());
+        System.out.println(StringEditor.editStringForEncryption(str.toLowerCase()));
 
     }
 

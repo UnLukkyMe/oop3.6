@@ -8,3 +8,5 @@ inputhandler vllt static machen
 
 funktioniert noch nicht:
 nach decryption string mit string editor ae wider zu ä machen?
+
+manchmal error weil durch lowercase und lesen aus txt ä,ö,ü zu komischen char kombinationen werden, die ich nicht alle finden->abgreifen konnte
