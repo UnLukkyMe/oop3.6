@@ -1,0 +1,52 @@
+@startuml
+scale 2
+skinparam classAttributeIconSize 0
+
+class Encryption {
+    - alphabet: String
+    - matrix: char[][]
+    - ignore: String
+    - map: Map<Character, Integer>
+    - skipsevery: int
+    + Encryption(alph: String)
+    + decrypt(verschluesselt: String, key: String): String
+    + encrypt(klartext: String, key: String): String
+    + printMatrix(): void
+    + getMatrixAsString(): String
+    - shiftString(s: String): String
+}
+
+class main {
+    + main(args: String[]): void
+}
+
+class InputHandler {
+    - strBuilder: StringBuilder
+    - linebreakstring: String
+    + InputHandler()
+    + readTextFromFile(fileName: String): void
+    + printTextFromWrittenFile(fileName: String): void
+    + toString(): String
+}
+
+class OutputHandler {
+    - linebreakstring: String
+    - strBuilder: StringBuilder
+    + OutputHandler()
+    + writeTextToFile(filename: String, text: String): void
+}
+
+class StringEditor {
+    - strBuilder: StringBuilder
+    + editStringAfterDecryption(str: String): String
+    + editStringForEncryption(str: String): String
+    + editTest(str: String): String
+    - replaceAllWindowSearch(toReplace: String, newString: String): void
+    - stringContains(toFind: String, originalString: String): int
+}
+
+InputHandler "1" o-- "1" StringBuilder
+OutputHandler "1" o-- "1" StringBuilder
+StringEditor "1" o-- "1" StringBuilder
+
+@enduml

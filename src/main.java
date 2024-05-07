@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * The main class contains the main method which provides a command-line interface for encrypting and decrypting text files using the Vigenère cipher.
+ * Also saves the decrypted/encrypted text to a .txt file
  */
 public class main {
     

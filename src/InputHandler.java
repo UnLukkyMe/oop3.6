@@ -21,6 +21,7 @@ public class InputHandler {
 
     /**
      * Reads text from the specified file.
+     * Stores it in a StringBuilder, with "_" as linebreak character
      *
      * @param fileName The name of the file to read text from.
      */
@@ -67,7 +68,7 @@ public class InputHandler {
     }
 
     /**
-     * Returns the text read from the file as a string.
+     * Returns the text read from a file, stored in a StringBuilder as a string.
      *
      * @return The text read from the file.
      */

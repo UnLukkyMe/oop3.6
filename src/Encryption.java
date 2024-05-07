@@ -17,6 +17,7 @@ public class Encryption {
     
     /**
      * Constructs a new Encryption object with the specified alphabet.
+     * Also fills the encryption matrix, as well as the alphabet hashmap.
      *
      * @param alph The alphabet to be used for encryption and decryption.
      */
@@ -129,6 +130,7 @@ public class Encryption {
 
     /**
      * Returns the encryption matrix as a string.
+     * With "_" as lineabreak character
      *
      * @return The encryption matrix as a string.
      */
@@ -144,6 +146,11 @@ public class Encryption {
         
         return out;
     }
+    /**
+     * Shifts a given string by one character clockwise
+     * @param s the string to be shifted
+     * @return  the shifted string
+     */
 
     private String shiftString(String s){
         s=s.substring(1, s.length()) + s.charAt(0);
