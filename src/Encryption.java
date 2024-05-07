@@ -1,8 +1,12 @@
-package test;
+package src;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The Encryption class provides methods for encrypting and decrypting text using the Vigenère cipher.
+ * It also contains methods for generating the encryption matrix and performing encryption and decryption operations.
+ */
 public class Encryption {
     
     private String alphabet;
@@ -11,6 +15,11 @@ public class Encryption {
     private Map<Character, Integer> map;
     int skipsevery=Integer.MAX_VALUE;
     
+    /**
+     * Constructs a new Encryption object with the specified alphabet.
+     *
+     * @param alph The alphabet to be used for encryption and decryption.
+     */
     public Encryption(String alph){
         alphabet=alph;
         matrix=new char[alphabet.length()][alphabet.length()];
@@ -30,7 +39,13 @@ public class Encryption {
         }
     }
 
-    //muss noch lernen relevante zeichen zu ignorieren
+    /**
+     * Decrypts the provided text using the specified key.
+     *
+     * @param verschluesselt The text to be decrypted.
+     * @param key The key to be used for decryption.
+     * @return The decrypted text.
+     */
     public String decrypt(String verschluesselt, String key){
         String klartext="";
         int j=-1;
@@ -66,6 +81,13 @@ public class Encryption {
         return klartext;
     }
 
+    /**
+     * Encrypts the provided text using the specified key.
+     *
+     * @param klartext The text to be encrypted.
+     * @param key The key to be used for encryption.
+     * @return The encrypted text.
+     */
     public String encrypt(String klartext, String key){
         String verschluesselt="";
         int j=-1;
@@ -91,6 +113,9 @@ public class Encryption {
         return verschluesselt;
     }
 
+    /**
+     * Prints the encryption matrix to the console.
+     */
     public void printMatrix(){
 
         for(int i=0; i<matrix.length; i++){
@@ -102,6 +127,11 @@ public class Encryption {
 
     }
 
+    /**
+     * Returns the encryption matrix as a string.
+     *
+     * @return The encryption matrix as a string.
+     */
     public String getMatrixAsString(){
         String out="";
 
@@ -120,3 +150,4 @@ public class Encryption {
         return s;
     }
 }
+

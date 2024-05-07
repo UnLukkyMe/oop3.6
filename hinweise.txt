@@ -1,7 +1,3 @@
-für den encryption ignorierer: mach n string der alle chars zb zahlen, sonderzeichen satzzeichen enthält und überprüfe beim codieren ob ingorierString.contains(charAt(i)) -> überspringe den char
-
-alle was geht private machen
-
 linebreak zeichen "_" in datei: inputhandler und outputhandler und main in ausgabe
 
 inputhandler vllt static machen
@@ -10,3 +6,7 @@ funktioniert noch nicht:
 nach decryption string mit string editor ae wider zu ä machen?
 
 manchmal error weil durch lowercase und lesen aus txt ä,ö,ü zu komischen char kombinationen werden, die ich nicht alle finden->abgreifen konnte
+
+programm bricht nicht ab wenn zb eigene exception: file not found geworfen wird
+
+javadoc uml machen

@@ -1,20 +1,29 @@
-package test;
+package src;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * The InputHandler class provides methods for reading text from files and printing text to the console.
+ */
 public class InputHandler {
     private StringBuilder strBuilder;
     private String linebreakstring="_";
 
+    /**
+     * Constructs a new InputHandler object.
+     */
     public InputHandler() {
         strBuilder = new StringBuilder();
     }
 
-    //macht schon alles kleinbuchstaben 
-    //WORKING DIRECTORY MUSS EINS ÜBER DEM FOLDER MIT DATEI SEIN
+    /**
+     * Reads text from the specified file.
+     *
+     * @param fileName The name of the file to read text from.
+     */
     public void readTextFromFile(String fileName){
 
         try(
@@ -35,6 +44,11 @@ public class InputHandler {
 
     }
 
+    /**
+     * Prints text from the specified file to the console.
+     *
+     * @param fileName The name of the file to print text from.
+     */
     public void printTextFromWrittenFile(String fileName){
 
         try(
@@ -50,12 +64,16 @@ public class InputHandler {
         }catch(IOException ioEx){
             System.out.println("Error while reading file: " + fileName);
         }
-
-
     }
 
+    /**
+     * Returns the text read from the file as a string.
+     *
+     * @return The text read from the file.
+     */
     public String toString() {
         return strBuilder.toString();
     }
 
 }
+
