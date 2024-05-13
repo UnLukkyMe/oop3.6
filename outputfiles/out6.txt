@@ -1,0 +1,65 @@
+>Verschluesselt:
+unhyxvyk  mvihvk ap keyarwohve
+ssjvprveek  rymhm zgp usljiygu
+luzpwv  zsba hwu cslvkwp  brx aixhl hyf kwilrqnijvpkya oggumaf
+tgnvrchw  gdlv enieolvye
+lgthxcb  jjgbrx isf jhqfrx
+dclvnrw  kqor xrw hqsshvyk
+xvpnvqspk  gierwnpym  eskguolnrr wuh ahidflrmgijp  oszyimvl
+smfvaeo  ica lghuele
+qstjifyyk  gpr isjaepil
+oijphvxb yff mvuagaujs  tjiwp zsfqelgu
+vyvrgnks  yvr tgkmyaxwt kim csdqumof
+hwt nicfx nqu luzpwvz zugij
+ilvneyvg  rsyamyku zia hsguryzejm  brx ueenlxm zylvlv
+iclwnpe  nbgzvlv xrw hqsshvyk  xvr bnqdga kyymwda
+zyewujpixrrw fhqya  awnjly qij mvihvkap hyzjejvlr
+wbqggkmuaxwp  asxgifiyeyoij  ujlcsjdgbxy  oslgu  yhq effyi mgyeol
+tyewgplr
+
+>Entschluesselt mit Key "scheune":
+claudius  koenig in daennemark
+fortinbras  prinz von norwegen
+hamlet  sohn des vorigen  und neffe des gegenwaertigen koenigs
+polonius  ober kaemmerer
+horatio  freund von hamlet
+laertes  sohn des polonius
+voltimand  cornelius  rosenkranz und gueldenstern  hofleute
+ossrich  ein hofnarr
+marcellus  ein officier
+bernardo und francisco  zween soldaten
+reinoldo  ein bedienter des polonius
+der geist von hamlets vater
+gertrude  koenigin von daennemark  und hamlets mutter
+ophelia  tochter des polonius  von hamlet geliebt
+verschiedene damen  welche der koenigin aufwarten
+comoedianten  todtengraeber  schiffleute  boten  und andre stumme
+personen
+
+>Verschluesselungsmatrix:
+abcdefghijklmnopqrstuvwxyz
+bcdefghijklmnopqrstuvwxyza
+cdefghijklmnopqrstuvwxyzab
+defghijklmnopqrstuvwxyzabc
+efghijklmnopqrstuvwxyzabcd
+fghijklmnopqrstuvwxyzabcde
+ghijklmnopqrstuvwxyzabcdef
+hijklmnopqrstuvwxyzabcdefg
+ijklmnopqrstuvwxyzabcdefgh
+jklmnopqrstuvwxyzabcdefghi
+klmnopqrstuvwxyzabcdefghij
+lmnopqrstuvwxyzabcdefghijk
+mnopqrstuvwxyzabcdefghijkl
+nopqrstuvwxyzabcdefghijklm
+opqrstuvwxyzabcdefghijklmn
+pqrstuvwxyzabcdefghijklmno
+qrstuvwxyzabcdefghijklmnop
+rstuvwxyzabcdefghijklmnopq
+stuvwxyzabcdefghijklmnopqr
+tuvwxyzabcdefghijklmnopqrs
+uvwxyzabcdefghijklmnopqrst
+vwxyzabcdefghijklmnopqrstu
+wxyzabcdefghijklmnopqrstuv
+xyzabcdefghijklmnopqrstuvw
+yzabcdefghijklmnopqrstuvwx
+zabcdefghijklmnopqrstuvwxy

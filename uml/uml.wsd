@@ -17,7 +17,7 @@ class Encryption {
 }
 
 class main {
-    + main(args: String[]): void
+    <u> + main(args: String[]): void
 }
 
 class InputHandler {
@@ -30,23 +30,21 @@ class InputHandler {
 }
 
 class OutputHandler {
-    - linebreakstring: String
-    - strBuilder: StringBuilder
-    + OutputHandler()
-    + writeTextToFile(filename: String, text: String): void
+   <u> - linebreakstring: String
+   <u> - strBuilder: StringBuilder
+   <u> + OutputHandler()
+   <u> + writeTextToFile(filename: String, text: String): void
 }
 
 class StringEditor {
-    - strBuilder: StringBuilder
-    + editStringAfterDecryption(str: String): String
-    + editStringForEncryption(str: String): String
-    + editTest(str: String): String
-    - replaceAllWindowSearch(toReplace: String, newString: String): void
-    - stringContains(toFind: String, originalString: String): int
+   <u> - strBuilder: StringBuilder
+   <u> + editStringAfterDecryption(str: String): String
+   <u> + editStringForEncryption(str: String): String
+   <u> + editTest(str: String): String
+   <u> - replaceAllWindowSearch(toReplace: String, newString: String): void
+   <u> - stringContains(toFind: String, originalString: String): int
 }
 
-InputHandler "1" o-- "1" StringBuilder
-OutputHandler "1" o-- "1" StringBuilder
-StringEditor "1" o-- "1" StringBuilder
+
 
 @enduml

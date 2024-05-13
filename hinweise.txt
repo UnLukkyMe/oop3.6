@@ -10,3 +10,6 @@ manchmal error weil durch lowercase und lesen aus txt ä,ö,ü zu komischen char
 programm bricht nicht ab wenn zb eigene exception: file not found geworfen wird
 
 javadoc uml machen
+
+
+javadoc -d C:\Users\Richm\Documents\Studium\2Semester\OOP\1.6\doku src
